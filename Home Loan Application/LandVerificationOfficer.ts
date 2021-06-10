@@ -1,5 +1,12 @@
 class LandVerificationOfficer{
 
     officerName : string;
-    offerContact : string;
+    officerContact : string;
+
+    constructor(officerName:string,officerContact:string){
+        this.officerName=officerName;
+        this.officerContact=officerContact;
+    }
+
+        
 }
