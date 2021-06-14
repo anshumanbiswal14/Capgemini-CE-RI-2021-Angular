@@ -1,0 +1,14 @@
+<table *ngFor = "let item of getAllDetails()">
+
+    <tr>
+        <td><img src="{{item.loanImage}}"width="50" height="50"/></td>
+        <td>{{item.loanName}}</td>
+        <td>{{item.loanCost | currency:'INR':'symbol-narrow':'4.2-2'}}</td>
+        <td>{{item.loanRating}}</td>
+        <td>{{item.loanInterest}}</td>
+        <td>{{item.loanStatus}}</td>
+        <td><button>Add to Enquire</button></td>
+        
+        
+    </tr>
+</table>
