@@ -6,10 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name:String ='Raksha';
+  name:String ='Anshuman';
+  outputAge:number=0;
+
 doClick(name:string)
   {
     this.name=name;
     console.log("Change name"+this.name)
+  }
+  getAgeFromChild(EventEmitterValue:number)
+  {
+this.outputAge=EventEmitterValue;
   }
 }

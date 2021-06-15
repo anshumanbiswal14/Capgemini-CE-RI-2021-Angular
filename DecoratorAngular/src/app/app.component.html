@@ -1,7 +1,9 @@
-<app-child></app-child>
-
-<hr/>
-<b>App Component</b>
-<input type="text" value="{{name}}"#name2><br/>
-<button (click)="doClick(name2.value)">change name</button>
-Entered Name{{name}}
+<div style="background-color: aqua;width: 100; height: 20;">
+  <app-child [childName]="name" (age)="getAgeFromChild($event)"  ></app-child>
+  </div>
+  <hr/>
+  <b>App Component</b>
+  <input type="text" value="{{name}}"#name2><br/>
+  <button (click)="doClick(name2.value)">change name</button>
+  Entered Name{{name}}
+  Age from Child-Component{{outputAge}}
