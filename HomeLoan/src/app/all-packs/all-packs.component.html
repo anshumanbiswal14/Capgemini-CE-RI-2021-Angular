@@ -1,5 +1,5 @@
 <table *ngFor = "let item of getAllDetails()">
-
+<div>
     <tr>
         <td><img src="{{item.loanImage}}"width="50" height="50"/></td>
         <td>{{item.loanName}}</td>
@@ -7,8 +7,15 @@
         <td>{{item.loanRating}}</td>
         <td>{{item.loanInterest}}</td>
         <td>{{item.loanStatus}}</td>
-        <td><button>Add to Enquire</button></td>
+        <td >
+            <div> 
+                <img  *ngFor = "let n of getRating(item.loanRating)" src = "assests/HomeLoanImage/Capture.PNG "  width="20" height="20"/>
+            </div>
+        </td>
+        <td> <button (click)="addToCart()">Add to Cart</button></td>
+        <td> <button (click) = "doShare(item.loanName)">Share</button></td>
         
         
     </tr>
+    </div>
 </table>

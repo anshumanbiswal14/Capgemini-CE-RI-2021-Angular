@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AllPacksComponent } from './all-packs/all-packs.component';
+import { StringpipePipe } from './stringpipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AllPacksComponent
+    AllPacksComponent,
+    StringpipePipe
   ],
   imports: [
     BrowserModule

@@ -13,7 +13,7 @@ export class LoanService {
     let BronzePack : LoanDetails ={
       loanName:'Bronze Home Loan',
       loanCost:45000,
-      loanRating:'3.5',
+      loanRating:3,
       loanInterest:5,
       loanStatus:'Approved',
       loanImage:'assets/HomeLoanImage/House.PNG'
@@ -22,7 +22,7 @@ export class LoanService {
     let SilverPack : LoanDetails ={
       loanName:'Silver Home Loan',
       loanCost:55000,
-      loanRating:'3.5',
+      loanRating:2,
       loanInterest:10,
       loanStatus:'Approved',
       loanImage:'assets/HomeLoanImage/House2.PNG'
@@ -31,7 +31,7 @@ export class LoanService {
     let GoldPack : LoanDetails ={
       loanName:'Gold Home Loan',
       loanCost:65000,
-      loanRating:'4.0',
+      loanRating:4,
       loanInterest:15,
       loanStatus:'Approved',
       loanImage:'assets/HomeLoanImage/House3.PNG'
@@ -40,7 +40,7 @@ export class LoanService {
     let TitaniumPack : LoanDetails ={
       loanName:'Titanium Home Loan',
       loanCost:85000,
-      loanRating:'5.0',
+      loanRating:5,
       loanInterest:20,
       loanStatus:'Approved',
       loanImage:'assets/HomeLoanImage/House.PNG'

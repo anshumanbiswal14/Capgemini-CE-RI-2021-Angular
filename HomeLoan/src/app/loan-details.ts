@@ -1,7 +1,7 @@
 export interface LoanDetails {
     loanName:string,
     loanCost:number,
-    loanRating:string,
+    loanRating:number,
     loanInterest:number,
     loanStatus:string,
     loanImage:string
