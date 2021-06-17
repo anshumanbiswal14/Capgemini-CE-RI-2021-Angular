@@ -1,0 +1,9 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.mainDiv{
+    width: 20%;
+    margin-left: 10%;
+}
+button{
+    color: blueviolet;
+   
+}

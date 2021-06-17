@@ -1,0 +1,14 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.card:hover{
+    border: 3px solid;
+    background-color: darkorchid;
+    color: white;
+    text-decoration-color: deeppink;
+    padding: 10px;
+    width: 400px !important;
+    
+  }
+  button:hover{
+      border: 3px solid;
+      background-color: aliceblue;
+  }

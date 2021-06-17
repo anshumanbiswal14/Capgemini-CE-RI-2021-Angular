@@ -1,0 +1,33 @@
+
+<div class="mainDiv">
+<form  (ngSubmit)="onSubmit()">
+  
+  <div class="form-group">
+    <label >Product Name</label>
+    <input type="text" class="form-control" id="pname1"  name="productName" [(ngModel)]="productModel.productName" #productName="ngModel"required>
+    <div *ngIf="productName.errors?.required">
+      Name is required.
+    </div>
+    
+  </div>
+  <div class="form-group">
+    <label >Product Cost</label>
+    <input type="text" class="form-control" id="pcost" name="productCost" [(ngModel)]="productModel.productCost" #productCost="ngModel"required>
+    <div *ngIf="productCost.errors?.required">
+      Cost is required.
+    </div>
+  </div>
+  <div class="form-check">
+    <label >Product Category</label>
+    <select id="pCategory1" name="productCategory" [(ngModel)]="productModel.productCategory"#productCategory="ngModel"required>
+      <option>Laptop</option>
+      <option>Camera</option>
+      <option>MobilePhone</option>
+    </select>
+    <div *ngIf="productCategory.errors?.required">
+   Category is required.
+    </div>
+  </div>
+  <button type="submit" >Submit</button>
+</form>
+</div>
